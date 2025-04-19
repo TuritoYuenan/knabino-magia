@@ -9,11 +9,11 @@ params:
 menu:
   main:
     - name: Magical girls
-      url: /magical-girls/
+      pageRef: /magical-girls
       weight: 550
     - name: Countries
-      url: /countries/
+      pageRef: /countries
       weight: 456
     - name: Extras
-      url: /extras/
+      pageRef: /extras
       weight: 789

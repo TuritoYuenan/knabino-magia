@@ -5,6 +5,8 @@ title: Knabino Magia
 params:
   author: Turito Yuenan
   description: Magical girl Fiction
+  images:
+  - ./img/banner.webp
 
 menu:
   main:

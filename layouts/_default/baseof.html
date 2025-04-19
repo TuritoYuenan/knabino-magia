@@ -11,6 +11,10 @@
 	<meta name="description" content="{{ .Site.Params.Description }}">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	{{ template "_internal/schema.html" . }}
+	{{ template "_internal/opengraph.html" . }}
+	{{ template "_internal/twitter_cards.html" . }}
+
 	<link rel="stylesheet" href="{{ .Site.BaseURL }}style.css">
 	<link rel="icon" href="{{ .Site.BaseURL }}favicon.svg">
 

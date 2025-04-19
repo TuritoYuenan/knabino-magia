@@ -3,12 +3,11 @@
 {{end}}
 
 {{define "main"}}
-<header id="list-header">
-	<h1>{{replace .Name "-" " " | title}}</h1>
+<header id="banner">
+	<h1 class="title">{{replace .Name "-" " " | title}}</h1>
+	<p class="subtitle">{{.Content}}</p>
 </header>
-<article>
-	{{.Content}}
-</article>
+
 <section id="list">
 	{{range .Pages.ByTitle}}
 	<a class="item" href="{{.Permalink}}">

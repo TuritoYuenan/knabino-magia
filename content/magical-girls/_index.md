@@ -1,5 +1,5 @@
 ---
-title: ⭐ List of Magical Girls
+title: List of Magical Girls
 description: Magical girl characters in Knabino Magia
 date: 2023-08-31T16:37:00+07:00
 draft: false

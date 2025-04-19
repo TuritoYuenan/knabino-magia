@@ -65,6 +65,31 @@ hr {
 	margin: 0 1rem;
 	border: 2pt solid var(--canva4);
 }
+/* Banner */
+
+#banner {
+	background: url(./img/banner.webp) center center;
+	background-size: cover;
+
+	color: var(--canva0);
+	text-align: center;
+}
+
+#banner .icon {
+	width: auto;
+	height: 10em;
+}
+
+#banner .title {
+	margin: 0;
+	font-size: clamp(2em, 8vw, 4em);
+	font-weight: bolder;
+}
+
+#banner .subtitle {
+	margin-bottom: 0;
+	font-size: 1em;
+}
 
 /* TEXT */
 

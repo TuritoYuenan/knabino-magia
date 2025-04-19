@@ -1,5 +1,5 @@
 ---
-title: 📝 List of extra Infodumps
+title: List of extra Infodumps
 description: Extra worldbuiling details in Knabino Magia
 date: 2023-08-31T16:37:00+07:00
 draft: false

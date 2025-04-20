@@ -111,7 +111,7 @@ nav .menu * {
 /* Banner */
 
 #banner {
-	background: url(/KnabinoMagia/img/banner.webp) center center;
+	background: url(/knabino-magia/img/banner.webp) center center;
 	background-size: cover;
 
 	color: var(--canva0);

@@ -1,22 +1,22 @@
-{{define "head"}}
+{{ define "head" }}
 {{ $style := resources.Get "styles/listpage.css" | minify }}
 <link rel="stylesheet" href="{{ $style.Permalink }}">
-{{end}}
+{{ end }}
 
-{{define "main"}}
+{{ define "main" }}
 
 <header id="banner">
-	<h1 class="title">{{replace .Name "-" " " | title}}</h1>
-	<p class="subtitle">{{.Content}}</p>
+	<h1 class="title">{{ replace .Name "-" " " | title }}</h1>
+	<p class="subtitle">{{ .Content }}</p>
 </header>
 
 <section id="list">
-	{{range .Pages.ByTitle}}
-	<a class="item" href="{{.Permalink}}">
-		<img class="thumb" src="/knabino-magia/{{.Page.Params.thumbnail}}" alt="{{.Page.Title}} thumbnail" />
-		<h3>{{.Title}}</h3>
+	{{ range .Pages.ByTitle }}
+	<a class="item" href="{{ .Permalink }}">
+		<img class="thumb" src="/knabino-magia/{{ .Page.Params.thumbnail }}" alt="{{ .Page.Title }} thumbnail" />
+		<h3>{{ .Title }}</h3>
 	</a>
-	{{end}}
+	{{ end }}
 </section>
 
-{{end}}
+{{ end }}

@@ -1,19 +1,19 @@
-{{define "head"}}
+{{ define "head" }}
 {{ $style := resources.Get "styles/homepage.css" | minify }}
 <link rel="stylesheet" href="{{ $style.Permalink }}">
-{{end}}
+{{ end }}
 
-{{define "main"}}
+{{ define "main" }}
 {{ $icon := resources.Get "icon.svg" | minify }}
 
 <section id="banner">
 	<img src="{{ $icon.RelPermalink }}" alt="icon" class="icon" width="50" height="70">
-	<h1 class="title">{{.Site.Title}}</h1>
-	<p class="subtitle">by {{.Site.Params.Author}}</p>
+	<h1 class="title">{{ site.Title }}</h1>
+	<p class="subtitle">by {{ site.Params.Author }}</p>
 </section>
 
 <article>
-	{{.Content}}
+	{{ .Content }}
 </article>
 
-{{end}}
+{{ end }}

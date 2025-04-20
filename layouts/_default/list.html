@@ -1,8 +1,10 @@
 {{define "head"}}
-<link rel="stylesheet" href="{{.Site.BaseURL}}styles/listpage.css">
+{{ $style := resources.Get "styles/listpage.css" | minify }}
+<link rel="stylesheet" href="{{ $style.Permalink }}">
 {{end}}
 
 {{define "main"}}
+
 <header id="banner">
 	<h1 class="title">{{replace .Name "-" " " | title}}</h1>
 	<p class="subtitle">{{.Content}}</p>
@@ -16,4 +18,5 @@
 	</a>
 	{{end}}
 </section>
+
 {{end}}

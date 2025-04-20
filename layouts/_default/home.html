@@ -1,10 +1,13 @@
 {{define "head"}}
-	<link rel="stylesheet" href="{{.Site.BaseURL}}styles/homepage.css">
+{{ $style := resources.Get "styles/homepage.css" | minify }}
+<link rel="stylesheet" href="{{ $style.Permalink }}">
 {{end}}
 
 {{define "main"}}
+{{ $icon := resources.Get "icon.svg" | minify }}
+
 <section id="banner">
-	<img src="{{.Site.BaseURL}}icon.svg" alt="icon" class="icon" width="50" height="70">
+	<img src="{{ $icon.RelPermalink }}" alt="icon" class="icon" width="50" height="70">
 	<h1 class="title">{{.Site.Title}}</h1>
 	<p class="subtitle">by {{.Site.Params.Author}}</p>
 </section>
@@ -12,4 +15,5 @@
 <article>
 	{{.Content}}
 </article>
+
 {{end}}
